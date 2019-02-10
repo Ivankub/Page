@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+  	<div class="container">
+        <div class="row justify-content-center">
+            <h1>Страница</h1>
+        </div>
+        <div class="row justify-content-center">
+        	<img src="img/avatar.jpg" id="avatar">
+        </div>
+
+        <div class="row justify-content-center">
+
+
+        	<div role="button" id="toogle">
+        		<center>
+        			Изменить сезон
+        		</center>
+        	</div>
+
+
+            <div id="carouselExampleSlideonly" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleSlideonly" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleSlideonly" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleSlideonly" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleSlideonly" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleSlideonly" data-slide-to="4"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-60" id="1" src="img/summer/p1.jpg" alt="First slide">
+                        <div class="carousel-caption">
+                            <h1 class="sezon">Лето</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-60" id="2" src="img/summer/p2.jpg" alt="Second slide">
+                        <div class="carousel-caption">
+                            <h1 class="sezon">Лето</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-60" id="3" src="img/summer/p3.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h1 class="sezon">Лето</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-60" id="4" src="img/summer/p4.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h1 class="sezon">Лето</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-60" id="5" src="img/summer/p5.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h1 class="sezon">Лето</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleSlideonly" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" id="black" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleSlideonly" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" id="black" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+        	<h1>Мои игры</h1>
+        </div>
+        <div class="row justify-content-center">
+        	<a href="https://ru.casclash.com/" id="game_icon_s"><img src="img\games\castle_clash.jpg" id="game_icon"></a>
+
+        	<a href="http://forum.wotblitz.ru/"id="game_icon_s"><img src="img\games\wot.jpg" id="game_icon"></a>
+
+        	<a href="https://forums.ubi.com/forumdisplay.php/1579-Far-Cry-5" id="game_icon_s"><img src="img\games\far_cry5.jpg" id="game_icon"></a>
+
+        	<a href="https://playoverwatch.com/ru-ru/" id="game_icon_s"><img src="img\games\overwatch.jpg" id="game_icon"></a>
+
+        	<a href="https://minecraft-ru.gamepedia.com/Java_Edition" id="game_icon_s"><img src="img\games\minecraft.jpg" id="game_icon"></a>
+        </div>
+    </div>
+
+
+    <style type="text/css">
+    	body{
+    		background-color: #F4FE3F;
+    	}
+    	.d-block{
+    		height: 400px;
+    		width: auto;
+    	}
+    	#black{
+    		background-color: black;
+    		border: 2px black;
+    		border-radius: 5px;
+    	}
+    	#avatar{
+    		position: absolute;
+    		top: 60px;
+    		left: 10px;
+    		z-index: -10;
+    		border: 5px solid white;
+    		border-radius: 12px;
+    		height: 350px;
+    		width: auto;
+    		box-shadow: -5px 5px 10px black;
+    	}
+    	#toogle{
+    		height: 55px;
+    		width: 85px;
+    		background-color: gray;
+    		z-index: 100;
+    		color: white;
+    		border: 3px solid black;
+    		border-radius: 15px;
+    		position: absolute;
+    		top: 55px;
+    		right: 285px;
+    		transition: 0.7s;
+    		box-shadow: 5px 5px 10px black;
+    	}
+    	#toogle:hover{
+    		height: 55px;
+    		width: 85px;
+    		background-color: #A1C796;
+    		z-index: 100;
+    		color: white;
+    		border: 3px solid black;
+    		border-radius: 10px;
+    		position: absolute;
+    		top: 55px;
+    		right: 285px;
+    		transition: 0.7s;
+    	}
+    	#toogle:active{
+    		height: 55px;
+    		width: 85px;
+    		background-color: #29C600;
+    		z-index: 100;
+    		color: white;
+    		border: 3px solid black;
+    		border-radius: 2px;
+    		position: absolute;
+    		top: 55px;
+    		right: 285px;
+    		transition: 0.2s;
+    	}
+    	#game_icon{
+    		height: 200px;
+    		width: 200px;
+    		border-radius: 35px;
+    		margin: 3px;
+    		transition: 0.5s;
+    		z-index: 0;
+    	}
+    	#game_icon:hover{
+    		height: 220px;
+    		width: 220px;
+    		border-radius: 35px;
+    		margin: -7px;
+    		transition: 0.5s;
+    		z-index: 10;
+    	}
+
+    	#game_icon_s{
+    		height: 200px;
+    		width: 200px;
+    		border-radius: 35px;
+    		margin: 3px;
+    		transition: 0.5s;
+    		z-index: 0;
+    	}
+    	#game_icon_s:hover{
+    		height: 200px;
+    		width: 200px;
+    		border-radius: 35px;
+    		margin: 3px;
+    		transition: 0.5s;
+    		z-index: 10;
+    	}
+    </style>
+
+
+
+		
+    <script src="js/jquery-3.3.1.min.js" ></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+	<script>
+		var s_cnt = 0;
+		var seasons = ["summer", "fall", "winter", "spring"]
+		var seasons_rus = ["Лето", "Осень", "Зима", "Весна"]
+		$('#carouselExampleSlideonly').carousel({
+            interval:2500
+        });
+        $('#carouselExampleSlideonly').attr("data-interval", "10");
+
+        $('#toogle').click(function (argument) {
+        	s_cnt++;
+        	if (s_cnt == 3) {
+        		s_cnt = 0
+        	}
+        	$(".sezon").text(seasons_rus[s_cnt]);
+
+        		for (var i = 1; i < 6; i++) {
+        			var path = ("img/"+seasons[s_cnt]+"/p"+i+".jpg");
+        			var selector = "#"+i;
+        			$(selector).attr('src', path);
+        		}
+        });
+	</script>
+  </body>
+</html>
